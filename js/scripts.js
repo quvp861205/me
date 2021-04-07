@@ -40,3 +40,45 @@
         target: "#sideNav",
     });
 })(jQuery); // End of use strict
+
+function cloudTags()
+{
+	const myTags = [
+      'JavaScript', 'CSS','HTML',
+      'Angular', 'NodeJs', 'Phalcon',
+      'Python', 'Php', 'Flutter',
+      'c#', 'c++', 'Java', 'Bootstrap',
+	  'WebServices', 'Api Rest', 'Sql Server',
+	  'PostgreSql', 'Oracle', 'MySql', 'Visual Basic',
+	  'Gsuite', 'CSS Grid', 'Linux', 'Shell', 'MicroServicios',
+	  'Backend', 'Frontend', 'Autentificacion', 'Pentesting',
+	  'Firebase', 'MongoDb', 'Npm', 'PWA'
+	];
+
+	//var tagCloud = TagCloud('.cloudTag', myTags);
+
+	var tagCloud = TagCloud('.cloudTag', myTags,{
+
+		// radius in px
+		radius: 175,
+
+		// animation speed
+		// slow, normal, fast
+		maxSpeed: 'fast',
+		initSpeed: 'normal',
+
+		// 0 = top
+		// 90 = left
+		// 135 = right-bottom
+		direction: 135,
+		
+		// interact with cursor move on mouse out
+		keep: true
+		
+	});
+
+	myTags = myTags.concat(['MoreTag']);
+	tagCloud.update(myTags);
+}
+cloudTags();
+

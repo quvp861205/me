@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+		<link href="lib/tagcloud/tagcloud.css" rel="stylesheet" />
 
     </head>
     <body id="page-top">
@@ -222,8 +223,11 @@ Para contrarestar el cansancio laboral que produce el área de sistemas prefiero
             <section class="resume-section par" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Habilidades</h2>
-                    <div class="subheading mb-3">Lenguajes de programacion y utilidades</div>
-                    <ul class="list-inline dev-icons">
+                    <div class="subheading mb-1">Lenguajes de programacion y utilidades</div>
+					<div style="width: 100%; padding-left: 50px;">
+					<div class="cloudTag"></div> 
+					</div>
+                    <!--<ul class="list-inline dev-icons">
                         <li class="list-inline-item"><i class="fab fa-html5"></i></li>
                         <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
                         <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
@@ -243,7 +247,7 @@ Para contrarestar el cansancio laboral que produce el área de sistemas prefiero
 						<li class="list-inline-item">							
 						<button class="btn btn-light font-weight-bold" type="button" style="color: #6c757d;"> Flutter </button> </li>
 
-                    </ul>
+                    </ul>-->
 				
                     <div class="subheading mb-3">Flujo de trabajo</div>
                     <ul class="fa-ul mb-3">
@@ -362,7 +366,7 @@ Para contrarestar el cansancio laboral que produce el área de sistemas prefiero
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                             2020 Escuela de Platzi: <a target="_blank" href="https://platzi.com/p/pqv86/"><img src="assets/img/platzi.png" width="50"/></a>
                         </li>
-						
+	
                     </ul>
                 </div>
             </section>
@@ -373,6 +377,9 @@ Para contrarestar el cansancio laboral que produce el área de sistemas prefiero
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+       
+		<script src="lib/tagcloud/TagCloud.min.js"></script>
+		
+		 <script src="js/scripts.js"></script>
     </body>
 </html>
